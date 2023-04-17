@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>first github page!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>오늘의 음료</title>
   </head>
   <body>
-    <p>test중!</p>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">🧃 오늘은 어떤 걸 마시면서 일해볼까? 🤔</h1>
+      </header>
+
+      <aside class="types">
+        <span class="type">☕️ 커피</span>
+        <span class="type">🧋 버블티</span>
+        <span class="type">🍹 에이드</span>
+        <span class="type">🍵 차</span>
+        <span class="type">🍸 알코올</span>
+      </aside>
+
+      <section class="drinks">
+        <div class="drink">
+          <img class="img-drink" src="images/coffee.jpeg" alt="카페라떼를 내리고 있는 이미지" />
+          <span class="explain-drink">머리를 깨워주는 카페인 가득 <b>커피</b></span>
+        </div>
+        <div class="drink">
+          <img class="img-drink" src="images/tapioca.jpeg" alt="버블티 두 개가 나란히 있는 이미지" />
+          <span class="explain-drink">달달한 <b>밀크티</b>와 쫀득한 <b>타피오카</b></span>
+        </div>
+        <div class="drink">
+          <img class="img-drink" src="images/ade.jpeg" alt="과일에이드를 만들고 있는 이미지" />
+          <span class="explain-drink">상큼한 과일 맛과 탄산 과일 <b>에이드</b></span>
+        </div>
+        <div class="drink">
+          <img class="img-drink" src="images/tea.jpeg" alt="동양식 차(tea) 이미지" />
+          <span class="explain-drink">차분한 작업을 위해 <b>차</b> 한 잔</span>
+        </div>
+        <div class="drink">
+          <img class="img-drink" src="images/liquor.jpeg" alt="술병이 나란히 있는 이미지" />
+          <span class="explain-drink">역시 작업은 <b>알코올</b>과 함께!</span>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
