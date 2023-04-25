@@ -114,7 +114,8 @@ const print = function () {
 };
 print(); // 변수에 할당한 함수 호출
 const printAgain = print;
-printAgain();
+printAgain(); // print
+
 const sumAgain = sum;
 console.log(sumAgain(1, 3));
 
