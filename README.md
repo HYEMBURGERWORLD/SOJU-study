@@ -21,10 +21,10 @@ Git, Github 강의를 학습하고 블로그에 기록한다.
 HTML, CSS의 개념을 이해하고 구현해본다.
 
 #### 내용
-(1) HTML, CSS 강의를 학습하고 블로그에 기록한다.
-🔗 Link : [POST1](https://hyem-burger.tistory.com/30), [POST2](https://hyem-burger.tistory.com/30)
-(2) HTML, CSS 를 사용하여 직접 구현해본다.
-주어진 템플릿, 필수 요구사항에 맞춰 구현한다.
+(1) HTML, CSS 강의를 학습하고 블로그에 기록한다.   
+🔗 Link : [POST1](https://hyem-burger.tistory.com/30), [POST2](https://hyem-burger.tistory.com/30)   
+(2) HTML, CSS 를 사용하여 직접 구현해본다.   
+주어진 템플릿, 필수 요구사항에 맞춰 구현한다.   
 🔗 Link : [DEMO](https://hyemburgerworld.github.io/SOJU-study/2-2/)   
 **필수요구사항** (추후 이미지 추가)   
 (1) 화면 크기에 따른 컴포넌트 위치 변경   
