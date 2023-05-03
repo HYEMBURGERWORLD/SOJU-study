@@ -40,4 +40,13 @@ javascript 기초개념을 학습한다.
 javascript 강의를 학습하고 블로그에 기록한다.
 🔗 Link : [POST1](https://hyem-burger.tistory.com/33), [POST2](https://hyem-burger.tistory.com/34), [POST3](https://hyem-burger.tistory.com/35)
 
+## 📝 4주차
+### 목표
+* javascript의 DOM & EVENT 를 학습한다.
+* html, css, javascript를 이용하여 직접 사이트를 구현한다.
+
+### 내용
+* DOM & EVENET 강의를 학습하고 블로그에 기록한다.
+* html, css, javascript를 이용하여 mbti 사이트를 구현한다.
+
 *** 
