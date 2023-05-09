@@ -1,4 +1,4 @@
-const url = 'clone-study-coding.netlify.app';
+const url = 'hyemburgerworld.github.io/SOJU-study/4-1';
 
 function setShare() {
   let resultImg = document.querySelector('#resultImg');
@@ -8,26 +8,37 @@ function setShare() {
   const shareImage = url + 'img/image-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
-  Kakao.Link.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: shareTitle,
-      description: shareDes,
-      imageUrl: shareImage,
-      link: {
-        mobileWebUrl: shareURL,
-        webUrl: shareURL,
+  Kakao.API.request({
+    url: '/v2/api/talk/memo/default/send',
+    data: {
+      receiver_uuids: ['${RECEIVER_UUID}'],
+      template_object: {
+        object_type: 'feed',
+        content: {
+          title: shareTitle,
+          description: shareDes,
+          image_url: shareImage,
+          link: {
+            web_url: shareURL,
+            mobile_web_url: shareURL,
+          },
+        },
+        buttons: [
+          {
+            title: '결과 확인',
+            link: {
+              mobile_web_url: shareURL,
+              web_url: shareURL,
+            },
+          },
+        ],
       },
     },
-
-    buttons: [
-      {
-        title: '결과확인하기',
-        link: {
-          mobileWebUrl: shareURL,
-          webUrl: shareURL,
-        },
-      },
-    ],
-  });
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 }
