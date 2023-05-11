@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="script/add.js" defer></script>
     <title>오늘의 음료</title>
   </head>
   <body>
@@ -16,7 +20,8 @@
         <h1 class="title">🧃 오늘은 어떤 걸 마시면서 일해볼까? 🤔</h1>
       </header>
 
-      <aside class="types">
+      <aside class="types" id="types">
+        <button id="add" class="add-btn">추가</button>
         <span class="type">☕️ 커피</span>
         <span class="type">🧋 버블티</span>
         <span class="type">🍹 에이드</span>
@@ -24,26 +29,86 @@
         <span class="type">🍸 알코올</span>
       </aside>
 
-      <section class="drinks">
-        <div class="drink">
-          <img class="img-drink" src="images/coffee.jpeg" alt="카페라떼를 내리고 있는 이미지" />
-          <span class="explain-drink">머리를 깨워주는 카페인 가득 <b>커피</b></span>
-        </div>
-        <div class="drink">
-          <img class="img-drink" src="images/tapioca.jpeg" alt="버블티 두 개가 나란히 있는 이미지" />
-          <span class="explain-drink">달달한 <b>밀크티</b>와 쫀득한 <b>타피오카</b></span>
-        </div>
-        <div class="drink">
-          <img class="img-drink" src="images/ade.jpeg" alt="과일에이드를 만들고 있는 이미지" />
-          <span class="explain-drink">상큼한 과일 맛과 탄산 과일 <b>에이드</b></span>
-        </div>
-        <div class="drink">
-          <img class="img-drink" src="images/tea.jpeg" alt="동양식 차(tea) 이미지" />
-          <span class="explain-drink">차분한 작업을 위해 <b>차</b> 한 잔</span>
-        </div>
-        <div class="drink">
-          <img class="img-drink" src="images/liquor.jpeg" alt="술병이 나란히 있는 이미지" />
-          <span class="explain-drink">역시 작업은 <b>알코올</b>과 함께!</span>
+      <section class="drinks" id="drinks">
+        <figure class="drink">
+          <img
+            class="img-drink"
+            src="images/coffee.jpeg"
+            alt="카페라떼를 내리고 있는 이미지"
+          />
+          <figcaption class="explain-drink">
+            머리를 깨워주는 카페인 가득 <b>커피</b>
+          </figcaption>
+        </figure>
+        <figure class="drink">
+          <img
+            class="img-drink"
+            src="images/tapioca.jpeg"
+            alt="버블티 두 개가 나란히 있는 이미지"
+          />
+          <figcaption class="explain-drink">
+            달달한 <b>밀크티</b>와 쫀득한 <b>타피오카</b>
+          </figcaption>
+        </figure>
+        <figure class="drink">
+          <img
+            class="img-drink"
+            src="images/ade.jpeg"
+            alt="과일에이드를 만들고 있는 이미지"
+          />
+          <figcaption class="explain-drink">
+            상큼한 과일 맛과 탄산 과일 <b>에이드</b>
+          </figcaption>
+        </figure>
+        <figure class="drink">
+          <img
+            class="img-drink"
+            src="images/tea.jpeg"
+            alt="동양식 차(tea) 이미지"
+          />
+          <figcaption class="explain-drink">
+            차분한 작업을 위해 <b>차</b> 한 잔
+          </figcaption>
+        </figure>
+        <figure class="drink">
+          <img
+            class="img-drink"
+            src="images/liquor.jpeg"
+            alt="술병이 나란히 있는 이미지"
+          />
+          <figcaption class="explain-drink">
+            역시 작업은 <b>알코올</b>과 함께!
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="modal-section none">
+        <div class="modal flex-col">
+          <form action="" class="input-list flex-col">
+            <span class="close-btn" id="close">X</span>
+            <label for="name"> 음료 이름 </label>
+            <input
+              type="text"
+              id="name"
+              class="drink-input"
+              placeholder="메론소다"
+            />
+            <label for="url"> 이미지 주소 </label>
+            <input
+              type="text"
+              id="url"
+              class="drink-input"
+              placeholder="url을 입력하세요"
+            />
+            <label for="detail"> 내용 </label>
+            <input
+              type="text"
+              id="detail"
+              class="drink-input"
+              placeholder="메론소다 없어서 못먹지"
+            />
+            <button type="button" id="save">저장</button>
+          </form>
         </div>
       </section>
     </div>

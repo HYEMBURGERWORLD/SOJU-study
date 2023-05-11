@@ -1,4 +1,8 @@
-@import "default.css";
+@import 'default.css';
+
+.none {
+  display: none;
+}
 
 .container {
   display: grid;
@@ -70,7 +74,33 @@
   width: 20rem;
 }
 
-.explain-drink {
+.modal-section {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  background-color: whitesmoke;
+  font-size: 2.4rem;
+  width: 48rem;
+  height: 48rem;
+  justify-content: center;
+  padding: 0 3.6rem;
+  border-radius: 2rem;
+}
+
+.close-btn {
+}
+
+.input-list {
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.drink-input {
+  padding: 1.2rem;
 }
 
 @media (max-width: 89.1em) {
