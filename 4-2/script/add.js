@@ -41,19 +41,22 @@ function makeDrinkInfo() {
   img.classList.add('img-drink');
   figcaption.classList.add('explain-drink');
 
-  img.src = drinkUrl.value;
-  img.alt = drinkName.value;
-  if (drinkDetail.value.indexOf(drinkName.value) !== -1) {
-    let start = drinkDetail.value.indexOf(drinkName.value);
-    let end =
-      drinkDetail.value.indexOf(drinkName.value) + (drinkName.value.length + 1);
+  const nameValue = drinkName.value;
+  const urlVal = drinkUrl.value;
+  const detailVal = drinkDetail.value;
 
-    let dt = [...drinkDetail.value];
+  img.src = urlVal;
+  img.alt = nameValue;
+  if (detailVal.indexOf(nameValue) !== -1) {
+    let start = detailVal.indexOf(nameValue);
+    let end = detailVal.indexOf(nameValue) + (nameValue.length + 1);
+
+    let dt = [...detailVal];
     dt.splice(start, 0, '<b>');
     dt.splice(end, 0, '</b>');
     figcaption.innerHTML = dt.join('');
   } else {
-    figcaption.innerHTML = drinkDetail.value;
+    figcaption.innerHTML = detailVal;
   }
 
   figure.appendChild(img);
