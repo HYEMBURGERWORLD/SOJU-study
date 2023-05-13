@@ -64,6 +64,6 @@ javascript 강의를 학습하고 블로그에 기록한다.
 
 - DOM & EVENET 강의를 학습하고 블로그에 기록한다. 🔗 Link : [BLOG](https://hyem-burger.tistory.com/37)
 - html, css, javascript를 이용하여 mbti 사이트를 구현한다.
-- js 필수 요구사항을 맞춰 사이트를 구현한다
+- js 필수 요구사항을 맞춰 사이트를 구현한다 🔗 Link : [BLOG](https://hyemburgerworld.github.io/SOJU-study/4-2/)
 
 ---
