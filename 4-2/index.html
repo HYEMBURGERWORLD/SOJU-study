@@ -88,26 +88,29 @@
             <div class="close-btn-box">
               <span class="close-btn" id="close">X</span>
             </div>
-            <label for="name"> 음료 이름 </label>
+            <label for="name" class="modal-label"> 음료 이름 </label>
             <input
               type="text"
               id="name"
               class="drink-input"
               placeholder="메론소다"
+              required
             />
-            <label for="url"> 이미지 주소 </label>
+            <label for="url" class="modal-label"> 이미지 주소 </label>
             <input
               type="text"
               id="url"
               class="drink-input"
               placeholder="url을 입력하세요"
+              required
             />
-            <label for="detail"> 내용 </label>
+            <label for="detail" class="modal-label"> 내용 </label>
             <input
               type="text"
               id="detail"
               class="drink-input"
               placeholder="메론소다 없어서 못먹지"
+              required
             />
             <button type="button" id="save" class="save-btn">저장</button>
           </form>
