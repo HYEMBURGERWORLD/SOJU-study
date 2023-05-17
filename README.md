@@ -66,4 +66,14 @@ javascript 강의를 학습하고 블로그에 기록한다.
 - html, css, javascript를 이용하여 mbti 사이트를 구현한다.
 - js 필수 요구사항을 맞춰 사이트를 구현한다 🔗 Link : [DEMO](https://hyemburgerworld.github.io/SOJU-study/4-2/)
 
+## 📝 5주차
+
+### 목표
+
+React 를 학습한다.
+
+### 내용
+
+- React 강의를 학습하고 학습한 내용을 블로그에 기록한다.
+
 ---
