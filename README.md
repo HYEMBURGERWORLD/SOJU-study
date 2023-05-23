@@ -74,6 +74,6 @@ React 를 학습한다.
 
 ### 내용
 
-- React 강의를 학습하고 학습한 내용을 블로그에 기록한다.
+- React 강의를 학습하고 학습한 내용을 블로그에 기록한다. 🔗 Link : [BLOG](https://hyem-burger.tistory.com/38)
 
 ---
