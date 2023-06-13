@@ -48,10 +48,7 @@
     <script type="text/javascript" src="script/start.js" defer></script>
     <script type="text/javascript" src="script/share.js" defer></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-      Kakao.init('key');
-      Kakao.isInitialized();
-    </script>
+
     <title>What is your TYPE?</title>
   </head>
   <body>
@@ -76,18 +73,9 @@
       <section id="result" class="mx-auto my-5 py-5 px-3">
         <h1 class="">당신은 어떤 타입일까요 ... ?</h1>
         <div class="resultName"></div>
-        <div
-          id="resultImg"
-          class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"
-        ></div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"></div>
         <div class="resultDesc"></div>
-        <button
-          type="button"
-          class="kakao mt-3 py-2 px-3"
-          onclick="kakaoShare()"
-        >
-          공유하기
-        </button>
+        <button type="button" class="kakao mt-3 py-2 px-3" onclick="kakaoShare()">공유하기</button>
       </section>
     </div>
   </body>
