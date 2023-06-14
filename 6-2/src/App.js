@@ -6,6 +6,7 @@ import coffee from './images/coffee.jpeg';
 import liquor from './images/liquor.jpeg';
 import tapioca from './images/tapioca.jpeg';
 import tea from './images/tea.jpeg';
+import default_Img from './images/default.jpeg';
 
 const App = () => {
   const data = [
@@ -37,13 +38,19 @@ const App = () => {
   ];
 
   const [dataList, setDataList] = useState(data);
+  const [modalOpen, setModalOpen] = useState(true);
+
   const addItem = (item) => {
     setDataList([...dataList, item]);
   };
 
-  const [modalOpen, setModalOpen] = useState(true);
   const modalHandler = () => {
     setModalOpen(!modalOpen);
+  };
+
+  const onErrorImg = (event) => {
+    event.target.src = default_Img;
+    event.target.alt = '오류로 인해 기본 이미지가 출력되었습니다.';
   };
 
   return (
@@ -65,7 +72,7 @@ const App = () => {
         <section className='flex-row drinks'>
           {dataList.map((item) => (
             <figure className='drink' key={item.name}>
-              <img src={item.url} alt={item.name} className='img-drink' />
+              <img src={item.url} alt={item.name} className='img-drink' onError={onErrorImg} />
               <figcaption>{item.content}</figcaption>
             </figure>
           ))}
